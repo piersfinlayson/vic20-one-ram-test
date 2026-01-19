@@ -1,0 +1,5 @@
+build
+.*.asm
+.*.s
+.*.json
+user*

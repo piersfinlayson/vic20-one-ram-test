@@ -1,0 +1,41 @@
+{
+    "$schema": "https://images.onerom.org/configs/schema.json",
+    "version": 1,
+    "name": "VIC-20 One RAM Tester",
+    "description": "VIC-20 RAM Tester for One ROM operating in RAM mode",
+    "categories": [
+        "computer",
+        "firmware",
+        "commodore",
+        "diag",
+        "vic-20"
+    ],
+    "rom_sets": [
+        {
+            "name": "PAL",
+            "description": "PAL version",
+            "type": "single",
+            "roms": [
+                {
+                    "description": "8KB Kernal ROM $E000-$FFFF",
+                    "file": "build/vic-20-one-ram-tester.pal.e0",
+                    "type": "2364",
+                    "cs1": "active_low"
+                }
+            ]
+        },
+        {
+            "name": "NTSC",
+            "description": "NTSC version",
+            "type": "single",
+            "roms": [
+                {
+                    "description": "8KB Kernal ROM $E000-$FFFF",
+                    "file": "build/vic-20-one-ram-tester.ntsc.e0",
+                    "type": "2364",
+                    "cs1": "active_low"
+                }
+            ]
+        }
+    ]
+}
