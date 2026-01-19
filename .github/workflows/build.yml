@@ -2,9 +2,7 @@ name: Build VIC-20 One RAM Tester
 
 on:
   push:
-    tags: [ 'v*' ] 
   pull_request:
-    branches: [ main, master ]
   release:
     types: [ published ]
   workflow_dispatch:
